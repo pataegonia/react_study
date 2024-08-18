@@ -1,5 +1,4 @@
-import styles from "./App.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Todo_list() {
   const [todo, setTodo] = useState("");
@@ -9,7 +8,7 @@ function Todo_list() {
   };
   const onSubmit = (event) => {
     event.preventDefault();
-    if (todo == "") {
+    if (todo === "") {
       alert("Please Write Your Todos");
       return;
     }

@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Todo_list from "./Todo";
 import Coin_Tracker from "./Coin";
+import Movie from "./movie";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 function APP() {
   //return <Todo_list />;
-  return <Coin_Tracker />;
+  //return <Coin_Tracker />;
+  return <Movie />;
 }
 root.render(<APP />);
 

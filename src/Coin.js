@@ -1,4 +1,3 @@
-import { element } from "prop-types";
 import { useState, useEffect } from "react";
 
 function Coin_Tracker() {
@@ -17,7 +16,7 @@ function Coin_Tracker() {
       });
   }, []);
   const findCoin = (element) => {
-    if (`${element.name} (${element.symbol})` == val) {
+    if (`${element.name} (${element.symbol})` === val) {
       return true;
     }
   };
