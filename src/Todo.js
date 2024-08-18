@@ -15,7 +15,6 @@ function Todo_list() {
     setTodos((prev) => [todo, ...prev]);
     setTodo("");
   };
-  console.log(todos);
   return (
     <div>
       <h1>My Todos</h1>
