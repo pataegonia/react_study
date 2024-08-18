@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom";
 
 function MakeDetail({ movie, loading }) {
   const onClick = () => {
@@ -11,7 +10,7 @@ function MakeDetail({ movie, loading }) {
         <h1>Loading...</h1>
       ) : (
         <div>
-          <img src={movie.medium_cover_image} />
+          <img src={movie.medium_cover_image} alt={movie.title} />
           <h2>{movie.title_long}</h2>
           <button onClick={onClick}>Goto Watch!</button>
           <h4>rating : {movie.rating}</h4>
@@ -32,5 +31,10 @@ function MakeDetail({ movie, loading }) {
     </div>
   );
 }
+
+MakeDetail.propTypes = {
+  movie: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
+};
 
 export default MakeDetail;
