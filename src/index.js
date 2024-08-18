@@ -9,11 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 function APP() {
   //return <Todo_list />;
   //return <Coin_Tracker />;
-  return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Movie />
-    </BrowserRouter>
-  );
+  return <Movie />;
 }
 root.render(<APP />);
 
